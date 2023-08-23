@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Clube do Atacado</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <!-- Bulma Version 0.7.1-->
+  <link rel="stylesheet" href="css/atacado.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"></script>
+</head>
+
+<body>
+  <!--------------------------------------NAV BAR-------------->
+  <nav class="navbar is-white">
+    <div class="navbar-menu">
+      <a class="navbar-item" href="index.html">
+        <img src="css/img/atacado.png" alt="Musi: uma nova versão para sites musicais" style="padding-left: 180px">
+      </a>
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-start">
+
+        <p class="control has-icons-left" style="top:30px">
+          <input class="input" style="font-size:14px;width:540px; height:40px" type="text"
+            placeholder="Quero comprar...">
+          <span class="icon is-large has-text-danger">
+            <i class="fas fa-search" aria-hidden="true"></i>
+          </span>
+        </p>
+
+      </div>
+    </div>
+
+    <div class="navbar-end" style="position: relative; right: 50px">
+      <div class="navbar-item">
+        <ul class="button gradiente">
+          <li class="subtitle" style="font-size: 14px; color: #525763; position: relative; top: 10px; right: 10px"><a
+              href="perfilusuario.html">Carlos Braga</a></li>
+          <li class="image"><a href="perfilusuario.html"><img class="is-rounded"
+                style="max-height:52PX; height: 52px; width:52px"
+                src="https://www.essentialibiza.com/ecms/wp-content/uploads/2013/08/Luciano_ushuaia_ibiza2013_essentialibiza_la-skimal08.jpg"
+                alt="Perfil Imagem"></a></li>
+
+        </ul>
+        <span class="icon is-medium has-text-danger">
+          <img src="css/img/add_shopping_cart - material.png" alt="adicionar ao carrinho" />
+        </span>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--------------------------------------FILTRO--------------->
+  <section class="section" style="margin-left: 180px">
+
+    <div class="container has-text-centered">
+
+      <ul class="steps is-small is-dashed is-hollow has-content-centered">
+        <p class="subtitle is-carvao is-5 has-text-left">Subir novo produto</p>
+        <li class="steps-segment is-active">
+          <span class="steps-marker" style="position: absolute; left:50%">1</span>
+        </li>
+        <li class="steps-segment">
+          <span class="steps-marker" style="position: absolute; left:-10%">2</span>
+        </li>
+      </ul>
+
+
+
+      <div class="columns">
+
+        <div class="column" style="border: 0px solid #4d4f6845; border-width: 0px 0px 0px 0px;">
+
+          <div class="card" style="width: 920px; background:#fafafa; margin-top: 20px">
+            <div class="card-content">
+
+              <div class="field has-text-centered" style="padding-left: 30px;margin-top: 24px">
+                <label class="label has-text-left" style="color:#525763; font-weight:normal">Pode subir até 5
+                  fotografias</label>
+                <div class="file is-white is-boxed" style="margin-top: 25px;margin-left: 60px">
+                  <img src="css/img/subir_foto.png" alt="subir foto">
+                  <img src="css/img/subir_foto.png" alt="subir foto" style="margin-left: 66px">
+                  <img src="css/img/subir_foto.png" alt="subir foto" style="margin-left: 66px">
+                  <img src="css/img/subir_foto.png" alt="subir foto" style="margin-left: 66px">
+                  <img src="css/img/eliminar_foto.png" alt="eliminar foto" style="margin-left: 66px">
+
+                </div>
+              </div>
+
+              <div class="field has-text-left" style="padding-left: 90px;margin-top: 50px;line-height: 30px;">
+                <i class="fas fa-check" style="color: #9E0011"></i><span class="subtitle is-7"
+                  style="color: #868C99;padding-left: 10px;">Os produtos falsificados estão proibidos no Clube do
+                  Atacado.</span><br>
+                <i class="fas fa-check" style="color: #9E0011"></i><span class="subtitle is-7"
+                  style="color: #868C99;padding-left: 10px;">Os produtos com imágens múltiples de alta calidad obtém a
+                  maioria das vendas.</span><br>
+                <i class="fas fa-check" style="color: #9E0011"></i><span class="subtitle is-7"
+                  style="color: #868C99;padding-left: 10px;">Adiciona imagens que sejam de, pelo menos, 800x800
+                  píxeles.</span><br>
+                <i class="fas fa-check" style="color: #9E0011"></i><span class="subtitle is-7"
+                  style="color: #868C99;padding-left: 10px;">Não coloque imagens de outros comerciantes, ou se
+                  eliminarão seus produtos.</span>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 920px; background:#fafafa; margin-top: 90px">
+        <div class="card-content">
+          <div class="field has-text-left"
+            style="margin-left: 30px; margin-top: 24px; width: 290px;border-style: solid; border-width: 0px 0px 1px 0px; color: #dbdbdb">
+            <label class="label has-text-left" style="color:#525763; font-weight:normal">Nome do produto</label>
+            <div class="control has-icons-left" style="margin-top: 25px">
+              <input class="input"
+                style="box-shadow:inset 0 0px 0px #ffffff00;border-color:#ffffff00;background-color: #fafafa; font-size: 14px;"
+                type="text">
+              <span class="icon is-small is-left" style="height: 27px; width: 20px">
+                <i class="fas fa-star"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="field has-text-left" style="padding-left: 30px;width: 55%;margin-top: 48px">
+            <label class="label" style="color:#525763; font-weight:normal">Descrição</label>
+            <div class="control">
+              <textarea class="textarea" style="background-color:#E5E8ED;"></textarea>
+            </div>
+          </div>
+
+          <div class="field has-text-left"
+            style="margin-left: 30px; margin-top: 25px; width: 290px;border-style: solid; border-width: 0px 0px 1px 0px; color: #dbdbdb">
+            <label class="label has-text-left" style="color:#525763; font-weight:normal">Categoria</label>
+            <div class="control has-icons-left" style="margin-top: 25px">
+              <input class="input"
+                style="box-shadow:inset 0 0px 0px #ffffff00;border-color:#ffffff00;background-color: #fafafa; font-size: 14px;"
+                type="text">
+              <span class="icon is-small is-left" style="height: 27px; width: 20px">
+                <i class="fas fa-tags"></i>
+              </span>
+            </div>
+          </div>
+          <div class="field has-text-left"
+            style="margin-left: 30px; margin-top: 25px; width: 290px;border-style: solid; border-width: 0px 0px 1px 0px; color: #dbdbdb">
+            <label class="label has-text-left" style="color:#525763; font-weight:normal">Código identificador</label>
+            <div class="control has-icons-left" style="margin-top: 25px">
+              <input class="input"
+                style="box-shadow:inset 0 0px 0px #ffffff00;border-color:#ffffff00;background-color: #fafafa; font-size: 14px;"
+                type="text">
+              <span class="icon is-small is-left" style="height: 27px; width: 20px">
+                <i class="fas fa-barcode"></i>
+              </span>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="card" style="width: 920px; background:#fafafa; margin-top: 90px">
+        <div class="card-content">
+          <div class="field has-text-left" style="margin-left: 30px; margin-top: 25px; width: 597px">
+            <p class="subtitle is-6" style="color:#525763; font-weight:bold">Preço</p>
+            <p class="subtitle is-7" style="color:#868C99; font-weight:normal">Você por escolher o preço unitário do
+              produto ou colocar o o valor de acordo com a quantidade do pedido a ser feita.</p>
+          </div>
+          <div class="field has-text-left"
+            style="margin-left: 30px; margin-top: 25px; width: 290px;border-style: solid; border-width: 0px 0px 1px 0px; color: #dbdbdb">
+            <label class="label has-text-left" style="color:#525763; font-weight:normal">Preço unitario ou rango</label>
+            <div class="control has-icons-left" style="margin-top: 25px">
+              <input class="input"
+                style="box-shadow:inset 0 0px 0px #ffffff00;border-color:#ffffff00;background-color: #fafafa; font-size: 14px;"
+                type="text">
+              <span class="icon is-small is-left" style="height: 27px; width: 20px">
+                <i class="far fa-money-bill-alt"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="field has-text-left" style="margin-left: 30px; margin-top: 25px; width: 597px">
+            <p class="subtitle is-6" style="color:#525763; font-weight:normal">Preço de acordo com a quantidade pedida
+            </p>
+
+            <div class="columns">
+              <div class="column">
+                <div class="field has-text-left">
+                  <div class="subtitle is-6" style="color:#868C99; font-weight:normal">De</div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="field has-text-left" style="margin-left: -130px; width: 80px;  color: #dbdbdb">
+                  <div class="" style="width:100%;border: 0px solid transparent; margin-top: 0px">
+                    <select style="font-size: 16px; border-width: 0px 0px 1px 0px; background:#fafafa">
+                      <option style="color:#23A7FB; margin-top: 10px">20</option>
+                      <option style="color:#23A7FB; margin-top: 10px">30</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="field has-text-left" style="margin-left: -170px;">
+                  <div class="subtitle is-6" style="color:#868C99; font-weight:normal">Até</div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="field has-text-left" style="margin-left: -290px; width: 80px;  color: #dbdbdb">
+                  <div class="" style="width:100%;border: 0px solid transparent;margin-top: 0px">
+                    <select style="font-size: 16px; border-width: 0px 0px 1px 0px; background:#fafafa">
+                      <option style="color:#23A7FB; margin-top: 10px">50</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="field has-text-left"
+              style="width: 290px;border-style: solid; border-width: 0px 0px 1px 0px; color: #dbdbdb">
+              <div class="control has-icons-left">
+                <input class="input"
+                  style="box-shadow:inset 0 0px 0px #ffffff00;border-color:#ffffff00;background-color: #fafafa; font-size: 14px;"
+                  type="text" placeholder="R$20,00 - R$45,00">
+                <span class="icon is-small is-left" style="height: 27px; width: 20px">
+                  <i class="far fa-money-bill-alt"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field has-text-left">
+              <label class="label"><a style="font-size: 16px; color:#23A7FB" href="#">Adicionar outro rango de
+                  preços</a></label>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="card" style="width: 920px; background:#fafafa; margin-top: 24px">
+        <div class="card-content">
+          <div class="field has-text-left"
+            style="margin-left: 30px; margin-top: 24px; width: 290px;border-style: solid; border-width: 0px 0px 1px 0px; color: #dbdbdb">
+            <label class="label has-text-left" style="color:#525763; font-weight:normal">Quantidade em Stock</label>
+            <div class="control has-icons-left" style="margin-top: 25px">
+              <input class="input"
+                style="box-shadow:inset 0 0px 0px #ffffff00;border-color:#ffffff00;background-color: #fafafa; font-size: 14px;"
+                type="text">
+              <span class="icon is-small is-left" style="height: 27px; width: 20px">
+                <i class="fas fa-th-large"></i>
+              </span>
+            </div>
+          </div>
+          <div class="field has-text-left"
+            style="margin-left: 30px; margin-top: 24px; width: 290px;border-style: solid; border-width: 0px 0px 1px 0px; color: #dbdbdb">
+            <label class="label has-text-left" style="color:#525763; font-weight:normal">Pedido mínimo do
+              produto</label>
+            <div class="control has-icons-left" style="margin-top: 25px">
+              <input class="input" style="box-shadow:inset 0 0px 0px #ffffff00;border-color:#ffffff00;font-size: 14px;"
+                type="text">
+              <span class="icon is-small is-left" style="height: 27px; width: 20px">
+                <i class="fas fa-list"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="buttons has-addons is-centered">
+        <div class="control">
+          <button class="button"
+            style="color:#525763;font-weight: bold;width:290px; height: 52px;margin-inline-end: 80px;">Seguinte</button>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+
+  </section>
+
+
+  <!--------------------------------------FOOTER--------------->
+  <footer class="footer" style="margin-left: 0px;bottom: 0;width: 100%;text-align: center;">
+
+    <nav class="level" style="background: #D73C38; height: 50px">
+      <!-- Left side -->
+      <div class="level-left" style="padding-left: 180px">
+        <div class="level-item">
+          <a class="has-text-white">
+            POLITICAS DE PRIVACIDADE
+          </a>
+        </div>
+        <div class="level-item">
+          <a class="has-text-white">
+            POLITICAS DE COOCKIE
+          </a>
+        </div>
+        <div class="level-item">
+          <a class="has-text-white">
+            AVISO LEGAL
+          </a>
+        </div>
+      </div>
+
+      <!-- Right side -->
+      <div class="level-right" style="padding-right: 50px">
+        <span class="icon is-medium">
+          <i class="far fa-envelope"></i>
+        </span>
+        <a class="has-text-white" href="https://bulma.io/">
+          CONTATO
+        </a>
+      </div>
+    </nav>
+
+  </footer>
+  <script src="js/bulma.js"></script>
+</body>
+
+</html>

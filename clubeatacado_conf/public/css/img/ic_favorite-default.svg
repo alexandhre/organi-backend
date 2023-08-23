@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>C050E3FC-6CE8-4EC4-928D-F4101EAE3981@0,5x</title>
+    <defs>
+        <path d="M0,0 L255,0 L255,417 C255,421.418278 251.418278,425 247,425 L8,425 C3.581722,425 5.41083001e-16,421.418278 0,417 L0,0 L0,0 Z" id="path-1"></path>
+        <filter x="-6.1%" y="-3.4%" width="112.2%" height="107.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1_comercio_tendering_" transform="translate(-181.000000, -1671.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1440" height="4463"></rect>
+            <g id="DK/03.-component/Product-tile/large-v2" transform="translate(165.000000, 1302.000000)">
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="General/icons/General/favorite/32" transform="translate(16.000000, 369.000000)">
+                    <rect id="bg_32px" x="0" y="0" width="40" height="40"></rect>
+                    <path d="M27.2197662,9.01744477 C28.795336,9.01611485 30.305056,9.64934776 31.4082427,10.7742482 C33.7495217,13.1511076 33.7495217,16.9671617 31.4082427,19.3440211 L20.3103868,30.5811358 L9.21253098,19.3440211 C6.87125204,16.9671617 6.87125204,13.1511076 9.21253098,10.7742482 C10.3163331,9.65019893 11.8256136,9.01698446 13.4010075,9.01698446 C14.9764013,9.01698446 16.4856819,9.65019893 17.589484,10.7742482 L20.3103868,13.5594244 L23.0205775,10.7956726 C24.1206455,9.65713213 25.6365988,9.01517232 27.2197662,9.01744477 L27.2197662,9.01744477 Z M27.2197662,6.87499868 C25.06792,6.8731779 23.006023,7.73809347 21.4994428,9.27453796 L20.3103868,10.4743062 L19.1213309,9.27453796 C17.6129949,7.74095674 15.5520418,6.87724557 13.4010075,6.87724557 C11.2499731,6.87724557 9.18902003,7.74095674 7.68068408,9.27453796 C4.52028777,12.4917718 4.52028777,17.6479219 7.68068408,20.8651558 L20.3103868,33.6555418 L32.9400896,20.8651558 C36.1004859,17.6479219 36.1004859,12.4917718 32.9400896,9.27453796 C31.4321266,7.74013248 29.3711268,6.8755932 27.2197662,6.87499868 Z" id="Fill" fill="#000000"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Clube do Atacado</title>
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+	<!-- Bulma Version 0.7.1-->
+	<link rel="stylesheet" href="css/atacado.css" />
+	<link rel="stylesheet" href="css/checkbox.css" />
+	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"></script>
+</head>
+
+<body>
+	<!--------------------------------------NAV BAR-------------->
+	<nav class="navbar is-white">
+		<div class="navbar-menu">
+			<a class="navbar-item" href="index.html">
+				<img src="css\img\atacado.png" alt="Musi: uma nova versão para sites musicais"
+					style="padding-left: 180px">
+			</a>
+			<div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<div id="navbarExampleTransparentExample" class="navbar-menu">
+			<div class="navbar-start">
+
+				<p class="control has-icons-left" style="top:30px">
+					<input class="input" style="font-size:14px;width:540px; height:40px" type="text"
+						placeholder="Quero comprar...">
+					<span class="icon is-large has-text-danger">
+						<i class="fas fa-search" aria-hidden="true"></i>
+					</span>
+				</p>
+
+			</div>
+		</div>
+
+		<div class="navbar-end" style="position: relative; right: 50px">
+			<div class="navbar-item">
+				<ul class="button gradiente">
+					<li class="subtitle"
+						style="font-size: 14px; color: #525763; position: relative; top: 10px; right: 10px"><a
+							href="perfilusuario.html">Carlos Braga</a></li>
+					<li class="image"><a href="perfilusuario.html"><img class="is-rounded"
+								style="max-height:52PX; height: 52px; width:52px"
+								src="https://www.essentialibiza.com/ecms/wp-content/uploads/2013/08/Luciano_ushuaia_ibiza2013_essentialibiza_la-skimal08.jpg"
+								alt="Perfil Imagem"></a></li>
+
+				</ul>
+				<span class="icon is-medium has-text-danger">
+					<img src="css/img/add_shopping_cart - material.png" alt="adicionar ao carrinho" />
+				</span>
+			</div>
+		</div>
+	</nav>
+
+
+	<!--------------------------------------FILTRO--------------->
+	<section class="section" style="margin-left: 180px">
+
+		<div class="container has-text-centered">
+
+			<ul class="steps is-small is-hollow has-content-centered">
+				<p class="subtitle is-carvao is-5 has-text-left">Caracteristicas do produto</p>
+				<li class="steps-segment">
+					<span class="steps-marker"
+						style="position: absolute; left:50%;background-color: #9E0011;color: #FFFFFF">
+						<i class="fas fa-check"
+							style="position: absolute; right: -5px; bottom: 15px; color: #9E0011;background-color: #FFFFFF;border-radius: 50%"></i>1</span>
+				</li>
+				<li class="steps-segment">
+					<span href="#" class="steps-marker"
+						style="position: absolute; left:-10%; border-color:#9E0011;color: #9E0011 ">2</span>
+				</li>
+			</ul>
+
+			<div class="columns">
+
+				<div class="column" style="border: 0px solid #4d4f6845; border-width: 0px 0px 0px 0px;">
+
+					<div class="card" style="width: 920px; background:#fafafa; margin-top: 20px">
+						<div class="card-content">
+
+							<div class="field has-text-centered" style="padding-left: 30px;margin-top: 24px">
+								<label class="label has-text-left" style="color:#525763; font-weight:normal">Cores
+									disponiveis</label>
+								<table class="table" style="margin-left: -24px">
+									<tr>
+										<td style="border: 0px;"><button class="button is-white"
+												style="border-color: #000000; width: 72px;height: 56px;"><i
+													class="fas fa-check"
+													style="position: absolute; left: 25px; bottom: 20px; color: #FFFFFF;background-color:#23A7FB;border-radius: 50%"></i>
+												<p class="subtitle is-8" style="color: #23A7FB; margin-top: 55px">Branco
+												</p>
+											</button></td>
+										<td style="border: 0px;"><button class="button is-dark"
+												style="width: 72px;height: 56px;">
+												<p class="subtitle is-8" style="margin-top: 55px">Preto</p>
+											</button></td>
+										<td style="border: 0px;"><button class="button"
+												style="background-color: #F5A623; width: 72px;height: 56px;border-color: transparent;">
+												<p class="subtitle is-8" style="margin-top: 55px">Laranja</p>
+											</button></td>
+										<td style="border: 0px;"><button class="button"
+												style="background-color: #D0021B; width: 72px;height: 56px;border-color: transparent;">
+												<p class="subtitle is-8" style="margin-top: 55px">Vermelho</p>
+											</button></td>
+										<td style="border: 0px;"><button class="button"
+												style="background-color: #4A90E2; width: 72px;height: 56px;border-color: transparent;">
+												<p class="subtitle is-8" style="margin-top: 55px">Azul</p>
+											</button></td>
+										<td style="border: 0px;"><button class="button"
+												style="background-color: #417505; width: 72px;height: 56px;border-color: transparent;">
+												<p class="subtitle is-8" style="margin-top: 55px">Verde</p>
+											</button></td>
+									</tr>
+
+									<tr style="padding-top: 50px">
+										<td style="padding-top: 24px;"><button class="button"
+												style="background-color: #FF00B9; width: 72px;height: 56px;border-color: transparent;">
+												<p class="subtitle is-8" style="margin-top: 55px">Rosa</p>
+											</button></td>
+										<td style="padding-top: 24px;"><button class="button"
+												style="background-color: #9B9B9B; border-color: transparent; width: 72px;height: 56px;">
+												<p class="subtitle is-8" style="margin-top: 55px">Cinza</p>
+											</button></td>
+										<td style="padding-top: 24px;"><button class="button"
+												style="background-color: #F8E71C; width: 72px;height: 56px;border-color: transparent;">
+												<p class="subtitle is-8" style="margin-top: 55px">Amarelo</p>
+											</button></td>
+										<td style="padding-top: 24px;"><button class="button"
+												style="background-color: #9013FE; width: 72px;height: 56px;border-color: transparent;">
+												<p class="subtitle is-8" style="margin-top: 55px">Lilas</p>
+											</button></td>
+										<td style="padding-top: 24px;"><button class="button"
+												style="background-color: #8B572A; width: 72px;height: 56px;border-color: transparent;">
+												<p class="subtitle is-8" style="margin-top: 55px">Marrom</p>
+											</button></td>
+										<td style="padding-top: 24px;"><button class="button"
+												style="background-color: #FF7063; width: 72px;height: 56px;border-color: transparent;">
+												<p class="subtitle is-8" style="margin-top: 55px">Salmão</p>
+											</button></td>
+									</tr>
+
+								</table>
+							</div>
+							<br>
+							<div class="columns">
+								<div class="column">
+									<div class="field has-text-centered" style="width: 18%; margin-left: 30px;">
+										<div class="control">
+											<input class="input" type="text"
+												style="font-size: 16px; background-color:#E5E8ED;" placeholder="C">
+										</div>
+									</div>
+								</div>
+								<div class="column">
+									<div class="field has-text-centered" style="width: 18%;margin-left: -140px">
+										<div class="control">
+											<input class="input" type="text"
+												style="font-size: 16px; background-color:#E5E8ED;" placeholder="M">
+										</div>
+									</div>
+								</div>
+								<div class="column">
+									<div class="field has-text-centered" style="width: 18%; margin-left: -310px">
+										<div class="control">
+											<input class="input" type="text"
+												style="font-size: 16px; background-color:#E5E8ED;" placeholder="Y">
+										</div>
+									</div>
+								</div>
+								<div class="column">
+									<div class="field has-text-centered" style="width: 18%; margin-left: -480px">
+										<div class="control">
+											<input class="input" type="text"
+												style="font-size: 16px; background-color:#E5E8ED;" placeholder="K">
+										</div>
+									</div>
+								</div>
+								<div class="column"
+									style="width: 18%; margin-left: -250px;position: relative;right: 390px">
+									<div class="field has-text-left">
+										<label class="label"><a style="font-size: 14px; color:#23A7FB"
+												href="#"><u>Adicionar cor</u></a></label>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="card" style="width: 920px; background:#fafafa; margin-top: 20px">
+				<div class="card-content">
+					<div class="card"
+						style="background-color: #fafafa; box-shadow: 0 0px 0px rgba(10, 10, 10, 0.1), 0 0 0 0px rgba(10, 10, 10, 0.1);width: 65%;">
+						<div class="card-content">
+							<label class="label has-text-left"
+								style="color:#525763; font-weight:normal">Tamanhos</label>
+							<div class="columns">
+								<div class="column has-text-left" style="background-color: #fafafa;">
+									<div class="field is-horizontal">
+										<div class="field-body">
+											<div class="field">
+												<div class="control">
+													<div class="field">
+														<input class="is-checkradio is-info" id="check1" type="checkbox"
+															name="exampleCheckboxInfo" checked="checked">
+														<label for="check1">PP</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="field-body" style="margin-right: 0px;">
+											<div class="field">
+												<div class="control has-icons-left">
+													<input class="input"
+														style="box-shadow:inset 0 -1px 0px #D6DCE4;border-color:#ffffff00;background-color: #fafafa; font-size: 14px;margin-left: -50px;"
+														type="text" placeholder="Número">
+													<span class="icon is-left"
+														style="height: 30px; margin-left: -50px; width: 20px">
+														<i class="fas fa-newspaper"></i>
+													</span>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+									<div class="field is-horizontal">
+										<div class="field-body">
+											<div class="field">
+												<div class="control">
+													<div class="field">
+														<input class="is-checkradio is-info" id="check2" type="checkbox"
+															name="exampleCheckboxInfo">
+														<label for="check2">P</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="field-body" style="margin-right: 0px;">
+											<div class="field">
+												<div class="control has-icons-left">
+													<input class="input"
+														style="box-shadow:inset 0 -1px 0px #D6DCE4;border-color:#ffffff00;background-color: #fafafa; font-size: 14px;margin-left: -50px;"
+														type="text" placeholder="Número">
+													<span class="icon is-left"
+														style="height: 30px; margin-left: -50px; width: 20px">
+														<i class="fas fa-newspaper"></i>
+													</span>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+									<div class="field is-horizontal">
+										<div class="field-body">
+											<div class="field">
+												<div class="control">
+													<div class="field">
+														<input class="is-checkradio is-info" id="check3" type="checkbox"
+															name="exampleCheckboxInfo" checked>
+														<label for="check3">M</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="field-body" style="margin-right: 0px;">
+											<div class="field">
+												<div class="control has-icons-left">
+													<input class="input"
+														style="color: #23A7FB; box-shadow:inset 0 -1px 0px #D6DCE4;border-color:#ffffff00;background-color: #fafafa; font-size: 14px;margin-left: -50px;"
+														type="text" placeholder="Número">
+													<span class="icon is-left"
+														style="height: 30px; margin-left: -50px; width: 20px">
+														<i class="fas fa-newspaper" style="color: #23A7FB"></i>
+													</span>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="column has-text-left" style="background-color: #fafafa;">
+									<div class="field is-horizontal">
+										<div class="field-body">
+											<div class="field">
+												<div class="control">
+													<div class="field">
+														<input class="is-checkradio is-info" id="check4" type="checkbox"
+															name="exampleCheckboxInfo">
+														<label for="check4">G</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="field-body" style="margin-right: 0px;">
+											<div class="field">
+												<div class="control has-icons-left">
+													<input class="input"
+														style="box-shadow:inset 0 -1px 0px #D6DCE4;border-color:#ffffff00;background-color: #fafafa; font-size: 14px;margin-left: -50px;"
+														type="text" placeholder="Número">
+													<span class="icon is-left"
+														style="height: 30px; margin-left: -50px; width: 20px">
+														<i class="fas fa-newspaper"></i>
+													</span>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+									<div class="field is-horizontal">
+										<div class="field-body">
+											<div class="field">
+												<div class="control">
+													<input class="is-checkradio is-info" id="check5" type="checkbox"
+														name="exampleCheckboxInfo">
+													<label for="check5">GG</label>
+												</div>
+											</div>
+										</div>
+										<div class="field-body" style="margin-right: 0px;">
+											<div class="field">
+												<div class="control has-icons-left">
+													<input class="input"
+														style="box-shadow:inset 0 -1px 0px #D6DCE4;border-color:#ffffff00;background-color: #fafafa; font-size: 14px;margin-left: -50px;"
+														type="text" placeholder="Número">
+													<span class="icon is-left"
+														style="height: 30px; margin-left: -50px; width: 20px">
+														<i class="fas fa-newspaper"></i>
+													</span>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+									<div class="field is-horizontal">
+										<div class="field-body">
+											<div class="field">
+												<div class="control">
+													<input class="is-checkradio is-info" id="check6" type="checkbox"
+														name="exampleCheckboxInfo">
+													<label for="check6">GGG</label>
+												</div>
+											</div>
+										</div>
+										<div class="field-body" style="margin-right: 0px;">
+											<div class="field">
+												<div class="control has-icons-left">
+													<input class="input"
+														style="box-shadow:inset 0 -1px 0px #D6DCE4;border-color:#ffffff00;background-color: #fafafa; font-size: 14px;margin-left: -50px;"
+														type="text" placeholder="Número">
+													<span class="icon is-left"
+														style="height: 30px; margin-left: -50px; width: 20px">
+														<i class="fas fa-newspaper"></i>
+													</span>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+							<div class="field has-text-left" style="width: 90%;">
+								<label class="label" style="color:#525763; font-weight:normal">Descrição</label>
+								<div class="control">
+									<textarea class="textarea" style="background-color:#E5E8ED;"></textarea>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="card" style="width: 920px; background:#fafafa; margin-top: 20px">
+				<div class="card-content">
+					<div class="field has-text-left" style="padding-left: 30px;width: 90%;margin-top: 24px">
+						<label class="label" style="color:#525763; font-weight:normal">Certificado de qualidade</label>
+						<div class="file is-white is-boxed" style="margin-top: 40px">
+
+							<img src="css/img/subir_foto.png" alt="subir foto">
+							<img src="css/img/subir_foto.png" alt="subir foto" style="margin-left: 66px">
+							<img src="css/img/subir_foto.png" alt="subir foto" style="margin-left: 66px">
+							<img src="css/img/subir_foto.png" alt="subir foto" style="margin-left: 66px">
+							<img src="css/img/eliminar_foto.png" alt="eliminar foto" style="margin-left: 66px">
+
+						</div>
+					</div>
+
+				</div>
+
+
+			</div>
+
+
+			<div class="buttons has-addons is-centered" style="margin-top: 80px">
+				<div class="control">
+					<button class="button" style="color:#525763;font-weight: bold;width:290px; height: 52px;">Subir
+						produto</button>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+
+	</section>
+
+
+	<!--------------------------------------FOOTER--------------->
+	<footer class="footer" style="margin-left: 0px;bottom: 0;width: 100%;text-align: center;">
+
+		<nav class="level" style="background: #D73C38; height: 50px">
+			<!-- Left side -->
+			<div class="level-left" style="padding-left: 180px">
+				<div class="level-item">
+					<a class="has-text-white">
+						POLITICAS DE PRIVACIDADE
+					</a>
+				</div>
+				<div class="level-item">
+					<a class="has-text-white">
+						POLITICAS DE COOCKIE
+					</a>
+				</div>
+				<div class="level-item">
+					<a class="has-text-white">
+						AVISO LEGAL
+					</a>
+				</div>
+			</div>
+
+			<!-- Right side -->
+			<div class="level-right" style="padding-right: 50px">
+				<span class="icon is-medium">
+					<i class="far fa-envelope"></i>
+				</span>
+				<a class="has-text-white" href="https://bulma.io/">
+					CONTATO
+				</a>
+			</div>
+		</nav>
+
+	</footer>
+	<script src="../js/bulma.js"></script>
+</body>
+
+</html>
