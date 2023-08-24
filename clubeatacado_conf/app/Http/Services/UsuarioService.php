@@ -98,8 +98,4 @@ class UsuarioService
    {  
       return RepresentanteLegal::recuperarRepresentanteLegal($idProdutor);          
    }
-
-   public function teste() {
-      dd(9999);
-   }
 }

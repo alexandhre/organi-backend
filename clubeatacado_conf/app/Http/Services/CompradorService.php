@@ -36,7 +36,7 @@ class CompradorService
 
    public function incluirCompradorNaSessao($comprador, $credenciais)
    {
-      session()->flush(); // Removes a specific variable
+      session()->flush();
       session([
          'email' => $credenciais['email'],
          'nome' => $comprador->DS_NOME,

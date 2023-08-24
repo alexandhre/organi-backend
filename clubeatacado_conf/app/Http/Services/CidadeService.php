@@ -6,7 +6,6 @@ use App\Cidade;
 
 class CidadeService
 {  
-   //generalizar esses metodos
    public function recuperarCidades()
    { 
       return Cidade::recuperarCidades();

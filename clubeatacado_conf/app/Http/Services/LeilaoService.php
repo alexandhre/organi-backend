@@ -2,15 +2,7 @@
 
 namespace App\Http\Services;
 
-use App\CategoriaEmpresa;
-use App\TipoNegocio;
 use App\Leilao;
-use App\Produtor;
-use App\RepresentanteLegal;
-
-use Illuminate\Http\Request;
-use Illuminate\Validation\Rule;
-use Validator;
 
 class LeilaoService
 {
@@ -65,7 +57,6 @@ class LeilaoService
 
          $dateCurrent = date('Y-m-d H:i:s');
          $dataAtual = new \DateTime(date('Y-m-d'));
-         //echo $paymentDate; // echos today! 
          $arrayDtInicio = explode(" ", $leiloes['leiloes'][$i]->DT_INICIO);
          $arrayDtFim = explode(" ", $leiloes['leiloes'][$i]->DT_FIM);
 
