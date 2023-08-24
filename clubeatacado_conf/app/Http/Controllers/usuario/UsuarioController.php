@@ -4,20 +4,14 @@ namespace App\Http\Controllers\usuario;
 
 use App\Anuncio;
 use App\Atacadista;
-use App\Categoria;
 use App\Comprador;
-use App\FotoAtacadista;
-use App\Notifications\EmailValidade;
 use App\User;
 use Exception;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Auth;
-use Illuminate\Support\Facades\App;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
-//use  Tymon\JWTAuth\JWTAuth;
 use Tymon\JWTAuth\Facades\JWTAuth;
 use App\Http\Services\ResponseService;
 
@@ -37,15 +31,6 @@ class UsuarioController extends Controller
     {
         $this->responseService = $responseService;
     }
-
-    /**
-     * @var JWTAuth
-     */
-//    private $jwtAuth;
-//
-//    public function AuthRouteAPI(Request $request){
-//        return $request->user();
-//    }
 
     public function abrirTelaValidarUsuario()
     {

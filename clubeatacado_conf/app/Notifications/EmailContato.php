@@ -26,7 +26,7 @@ class EmailContato extends Notification
      * @param  mixed  $notifiable
      * @return array
      */
-    public function via($notifiable)
+    public function via()
     {
         return ['mail'];
     }
@@ -37,14 +37,8 @@ class EmailContato extends Notification
      * @param  mixed  $notifiable
      * @return \Illuminate\Notifications\Messages\MailMessage
      */
-    public function toMail($notifiable)
+    public function toMail()
     {
-        // return (new MailMessage)
-        // ->subject('[Tendering] Contato')
-        // ->greeting('Olá, tem uma mensagem nova!')
-        // ->line('Mensagem do Usuário:  '.$this->dados->DS_NOME)
-        // ->line($this->dados->DS_MENSAGEM);
-
             return (new MailMessage)            
             ->subject('Tendering - Mensagem de contato: ' . $this->dados->DS_NOME)
             ->greeting('Mensagem de contato: ' . $this->dados->DS_NOME)
@@ -59,7 +53,7 @@ class EmailContato extends Notification
      * @param  mixed  $notifiable
      * @return array
      */
-    public function toArray($notifiable)
+    public function toArray()
     {
         return [
             //

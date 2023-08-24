@@ -4,7 +4,6 @@ namespace App\Notifications;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 
 class EmailValidade extends Notification
@@ -27,7 +26,7 @@ class EmailValidade extends Notification
      * @param  mixed  $notifiable
      * @return array
      */
-    public function via($notifiable)
+    public function via()
     {
         return ['mail'];
     }
@@ -40,11 +39,9 @@ class EmailValidade extends Notification
      */
     public function toMail($notifiable)
     {
-        
-        //$url = url('http://recicla.myappnow.com.br/recicla/login');
         $id = $this->user;
         
-        return (new MailMessage)->subject('[clube do atacado] Ativação do usuário')->view('auth.email.validacao',compact('id'));
+        return (new MailMessage)->subject('[Tendering] Ativação do usuário')->view('auth.email.validacao',compact('id'));
 
     }
 
@@ -54,7 +51,7 @@ class EmailValidade extends Notification
      * @param  mixed  $notifiable
      * @return array
      */
-    public function toArray($notifiable)
+    public function toArray()
     {
         return [
             //

@@ -4,7 +4,6 @@ namespace App\Notifications;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 
 /**
@@ -34,7 +33,7 @@ class PasswordResetRequest extends Notification
      * @param  mixed  $notifiable
      * @return array
      */
-    public function via($notifiable)
+    public function via()
     {
         return ['mail'];
     }
@@ -47,9 +46,8 @@ class PasswordResetRequest extends Notification
      */
     public function toMail($notifiable)
     {
-//        $url = url('http://recicla.myappnow.com.br/recicla/login');
         $senha = $this->senha;
-        return (new MailMessage)->subject('[clube do atacado] Recuperar senha')->view('auth.email.email',compact('senha'));
+        return (new MailMessage)->subject('[Tendering] Recuperar senha')->view('auth.email.email',compact('senha'));
     }
 
     /**
@@ -58,7 +56,7 @@ class PasswordResetRequest extends Notification
      * @param  mixed  $notifiable
      * @return array
      */
-    public function toArray($notifiable)
+    public function toArray()
     {
         return [
             //
