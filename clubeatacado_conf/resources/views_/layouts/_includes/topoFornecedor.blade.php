@@ -1,1 +1,0 @@
-<script src="{{ asset('js/fornecedor.js') }}"></script>
