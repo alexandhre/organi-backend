@@ -45,17 +45,8 @@ class ResetPasswordController extends Controller
         $this->emailService = $emailService;
     }
 
-    public function showRecuperarSenhaForm()
-    {
-        if (!key_exists('email', session()->all())) {
-            return view('auth.passwords.recuperarSenha');        
-        }
-        return view('home');
-    }
-
     public function enviarEmailRecuperarSenha(Request $request)
     {
-
         $json = $request->all();
         $dados = json_decode(json_encode($json, true));
 

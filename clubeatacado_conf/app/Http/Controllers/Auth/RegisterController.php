@@ -51,19 +51,6 @@ class RegisterController extends Controller
         $this->sharedService = $sharedService;
     }
 
-    public function showRegisterForm(){        
-
-        if(!key_exists('email',session()->all())){            
-            return view('auth.register');
-        }
-        return redirect('/home');
-    }
-
-    public function abrirTelaValidarUsuario()
-    {
-        return view('auth.passwords.validacao');
-    }
-
     /**
      * Create a new user instance after a valid registration.
      *

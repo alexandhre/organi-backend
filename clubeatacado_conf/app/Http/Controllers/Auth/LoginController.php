@@ -49,19 +49,6 @@ class LoginController extends Controller
     }
 
     /**
-     * Show the application's login form.
-     *
-     * @return \Illuminate\View\View
-     */
-    public function showLoginForm()
-    {         
-        if(!key_exists('email',session()->all())){
-            return view('auth.login');        
-        }
-        return redirect('/home');   
-    }
-
-    /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View|string
      */
     public function login(){
