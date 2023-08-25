@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use App\Http\Services\CidadeService;
 use App\Http\Services\CompradorService;
 use App\Http\Services\LeilaoService;
-use App\Http\Services\ProdutoService;
 use App\Http\Services\ResponseService;
 use App\Http\Services\SharedService;
 use App\Http\Services\UsuarioService;
@@ -64,52 +63,6 @@ class PerfilController extends Controller
         $this->responseService = $responseService;
         $this->paginationService = $paginationService;
 
-    }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {    
-            
-        $dadosUsuario = $this->usuarioService->recuperarDadosUsuario(session()->all()['id']);
-        $cidades = $this->cidadeService->recuperarCidades();
-        $listaComprasUsuario =  $this->compradorService->recuperarComprasUsuario(); 
-
-        $leiloes = $this->leilaoService->recuperarLeiloesUsuario();
-
-        for ($i = 0; $i < count($leiloes); $i++) {
-            $maiorValorLance = $this->leilaoService->recuperarMaiorValorLance($leiloes[$i]->ID_LEILAO);
-            $leiloes[$i]->VL_LANCE_MAIOR = $maiorValorLance;
-        }
-        
-        setlocale(LC_TIME, 'portuguese'); 
-        date_default_timezone_set('America/Sao_Paulo');
-        $dateCurrent = date('Y-m-d H:i:s'); 
-        $dateCurrent=date('Y-m-d H:i:s', strtotime($dateCurrent));
-
-        for ($i = 0; $i < count($listaComprasUsuario); $i++) {
-            //echo $paymentDate; // echos today! 
-            $dataEntrega = date('Y-m-d', strtotime($listaComprasUsuario[$i]->DT_ENTREGA));
-                
-            if (($dateCurrent >= $dataEntrega)){
-                //Mudar logica para atualizar esse atributo quando a entrega realmente for feita
-                //colocar um atributo no banco
-                $listaComprasUsuario[$i]->IN_ENTREGA_FEITA = 1;
-            }else{
-                $listaComprasUsuario[$i]->IN_ENTREGA_FEITA = 0;
-            }  
-            
-            $date = date('Y-m-d');
-            $listaComprasUsuario[$i]->DT_ENTREGA =  strftime("%d de %B de %Y", strtotime($listaComprasUsuario[$i]->DT_ENTREGA));
-            $listaComprasUsuario[$i]->DT_PEDIDO =  strftime("%d de %B de %Y", strtotime($listaComprasUsuario[$i]->DT_PEDIDO));
-        }
-
-        $produtos = $this->produtoService->listarProdutosByUsuario(0, 3);
-        
-        return view('perfil', compact('dadosUsuario', 'cidades', 'listaComprasUsuario', 'leiloes', 'produtos'));
     }
     
     /**
@@ -356,10 +309,5 @@ class PerfilController extends Controller
             'produtos' => $listaProduto
         ];    
         return $this->responseService->responseSucessoJson(200, $response);
-    }
-
-    public function abrirPaginaPesquisa()
-    {  
-        return view('indexPesquisa');
-    }  
+    } 
 }

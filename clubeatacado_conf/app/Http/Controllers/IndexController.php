@@ -46,22 +46,6 @@ class IndexController extends Controller
         $this->carrinhoService = $carrinhoService;
         $this->authorizationService = $authorizationService;
     }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {   
-        if(!key_exists('email',session()->all())){
-            return view('auth.login');        
-        }                      
-        //Transformar esse 3 em constante            
-        $categorias = $this->categoriaProdutoService->recuperarCategorias(3);        
-        $listaAnuncioProduto =  $this->produtoService->listarProdutos(0, 3, false, session()->all()['id']);
-        return view('index', compact('listaAnuncioProduto', 'categorias'));
-    }
     
     /**
      * Display a listing of the resource.
@@ -89,18 +73,7 @@ class IndexController extends Controller
             ];    
             return $this->responseService->responseSucessoJson(200, $response);           
         }                                 
-    } 
-
-    public function carrinho()
-    {   
-        if(!key_exists('email',session()->all())){
-            return view('auth.login');        
-        }                      
-        //Transformar esse 3 em constante            
-        $listaCarrinho = $this->carrinhoService->recuperarListaCarrinho();    
-        //dd(session()->all()['id']);
-        return view('carrinho', compact('listaCarrinho'));
-    } 
+    }
 
     public function categoria()
     {  
@@ -163,10 +136,5 @@ class IndexController extends Controller
             'categorias' => $categorias
         ];    
         return $this->responseService->responseSucessoJson(200, $response);
-    }
-
-    public function abrirPaginaPesquisa()
-    {  
-        return view('indexPesquisa');
-    }  
+    } 
 }

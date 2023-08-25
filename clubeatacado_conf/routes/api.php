@@ -89,7 +89,6 @@ Route::group(['middleware' => 'auth.session'], function () {
     //Registrar/Atualizar Produtor
     Route::post('/fornecedor', 'ProdutorController@produtorPage')->name('produtorPage');
     Route::post('/atualizarProdutor', 'ProdutorController@atualizarProdutor')->name('atualizarProdutor');
-    Route::post('/cadastrarProdutor', 'ProdutorController@cadastrarProdutor')->name('cadastrarProdutor');
     //////////////////////////////////////////////////////////////////////////////////////  
     
     //////////////////////////////////////////////////////////////////////////////////////

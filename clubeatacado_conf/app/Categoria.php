@@ -17,12 +17,10 @@ class Categoria extends Model
 
     public static function listarTipocategorias(){
         $categoria = DB::table('TB_TIPO_PRODUTO')
-            //->join('TB_CATEGORIA_PRODUTO','TB_TIPO_PRODUTO.ID_TIPO_PRODUTO','TB_CATEGORIA_PRODUTO.ID_TIPO_PRODUTO')
             ->select(
                 'TB_TIPO_PRODUTO.ID_TIPO_PRODUTO AS tipoId',
                 'TB_TIPO_PRODUTO.DS_TIPO_PRODUTO AS tipoCategoria',
                 'TB_TIPO_PRODUTO.DS_ICONE_TIPO_PRODUTO AS iconeTipo')
-              //  'TB_CATEGORIA_PRODUTO.DS_CATEGORIA_PRODUTO as categoriaProduto')
             ->get();
         foreach($categoria as $item){
             $item->iconeTipo = "https://testetendering.myappnow.com.br/clubeatacado\images\categorias\\".$item->iconeTipo;
@@ -43,18 +41,6 @@ class Categoria extends Model
             ->orderBy('TB_ANUNCIO_PRODUTO.ID_ANUNCIO_PRODUTO', 'DSC')
             ->limit(8)
             ->get();
-
-//        foreach ($listAnuncio as $key => $item){
-//
-//            $item->FOTO_ANUNCIO = DB::table('TB_FOTO_PRODUTO')
-//                ->where('ID_ANUNCIO_PRODUTO', $item->idAnuncio)
-//                ->select('TB_FOTO_PRODUTO.DS_FOTO_PRODUTO')
-//                ->limit(1)
-//                ->get();
-//
-//           // $item->FOTO_ANUNCIO = "http://192.168.1.125:8000\images\\". $item->FOTO_ANUNCIO->DS_FOTO_PRODUTO;
-//        }
-
         $home = [
             $categoria,
             $listAnuncio

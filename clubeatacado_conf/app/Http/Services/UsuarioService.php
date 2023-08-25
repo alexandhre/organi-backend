@@ -7,7 +7,6 @@ use App\TipoNegocio;
 use App\Comprador;
 use App\Produtor;
 use App\RepresentanteLegal;
-
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use Validator;
